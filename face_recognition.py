@@ -19,7 +19,7 @@ def proceccing(image1) :
     name = 'Unknown'
     img1 = cv2.imread(image1)
     f1 = face_recognition.face_encodings(img1)[0]
-    for i in find_image(r'C:\Users\smir1\Downloads\source-code-face-recognition\source code\imagesss') :
+    for i in find_image(r'< your location file >') :
         img2 = cv2.imread(i[1])
         f2 = face_recognition.face_encodings(img2)[0]
         an = face_recognition.compare_faces([f1] , f2)
@@ -37,6 +37,6 @@ def proceccing(image1) :
 
     cv2.waitKey(0)
 
-proceccing(r'C:\Users\smir1\Downloads\source-code-face-recognition\source code\imagesss\iliya.jpeg')
+proceccing(r'< your location file >')
             
     
